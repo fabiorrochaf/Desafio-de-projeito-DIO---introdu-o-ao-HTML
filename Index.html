@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <Title>Projeto DIO HTML</Title>
+    </head>
+    <body>
+        <h1 id="inicio">Desafio de projeto-Introdução ao HTML na prática</h1>
+        <hr>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#html">O que é HTML e para que ele serve?</a></li>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Tags e seus atributos</a></li>
+            <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ul>
+        
+        <h2 id="html">O que é <strong>HTML</strong> e para que ele serve?</h2> <small><sup><a href="#inicio">(voltar ao inicio)</sup></a></small>
+        <p>Criado por Tim Berners-Lee, <strong>HTML</strong> (linguagem de marcação de Hipertexto), é o componente básico da web, permite inserir o conteúdo e estabelecer a estrutura básica de um website. Serve para dar significado e organizar informações de uma página web.<u>HTML não é uma linguagem de programação</u>, por mais que tenha Linguagem no nome, é basicamente um arquivo de marcação, com delimitadores que são interpretados pelo navegador.</p>
+        <blockquote><i>"O objetivo da Web é servir a humanidade. Nós construí-lo agora para que aqueles que venham mais tarde possam criar coisas que não podemos imaginar."</i></blockquote>
+        <blockquote><small>-Tim Berners-Lee</small></blockquote>
+        <h2 id="estrutura">Estrutura Básica do <strong>HTML</strong></h2> <small><sup><a href="#inicio">(voltar ao inicio)</sup></a></small>
+        <p>Um documento <strong>HTML</strong> válido precisa seguir obrigatoriamente a estrutura composta pelas tags<mark> < html > , < head > e < body ></mark> </p>
+        <p>exemplo:</p>
+        <pre class="lang-html prettyprint linenums"></pre> 
+        <ol class="linenums">
+            <li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li>
+            <li class="L1"><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">lang</span><span class="pun">=</span><span class="atv">"pt-br"</span><span class="tag">&gt;</span></li>
+            <li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span></li>
+            <li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span class="pln">Título da página</span><span class="tag">&lt;/title&gt;</span></li>
+            <li class="L4"><span class="pln">    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span></li>
+            <li class="L5"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span></li>
+            <li class="L6"><span class="pln">  </span><span class="tag">&lt;body&gt;</span></li>
+            <li class="L7"><span class="pln">    Aqui vai o código HTML que fará seu site aparecer.</span></li>
+            <li class="L8"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span></li>
+            <li class="L9"><span class="tag">&lt;/html&gt;</span></li>
+
+            </ol>
+            <h3>Doctype - Definindo o documento</h3>
+            <p>O doctype não é uma tag <strong>HTML</strong>, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível</p>
+            <h3><strong>HTML</strong></h3>
+            <p> Abertura e fechamento do <strong>HTML</strong>, tudo que estiver entre eles o computador irá ler como tal</p>
+            <h3>HEAD</h3>
+            <p>"cabeça", informações pré-carregadas antes de exibir para o usuário, são dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento da tag < head > e < /head >.</p>
+            <h3>BODY</h3>
+            <P>tudo que o usuário irá de fato ver e navegar, todo e qualquer texto ou mídia. fica delimitado entre a abertura e fechamen to da tag < body > e < /body >.</P>
+            <H2 id="tags">Tags e seus atributos</H2> <small><sup><a href="#inicio">(voltar ao inicio)</sup></a></small>
+            <p>Tags são o conjunto de caracteres que formam um elemento. Existem dois tipos de Tags, as que necessitam de fechamento e as que não necessitam de fechamento.</p>
+            <p>As que necessitam de fechamento, utilizamos o sinal de menor ( < ), seguido do nome do elemento e o sinal de maior ( > ) para abertura. Para fechamento, utilizamos o sinal de menor ( < ), seguido de barra ( / ), nome do elemento e o sinal de maior ( > ).</p>
+            <p>Exemplo:</p>
+            <p> < p >A tag do elemento de parágrafo necessita de fechamento.< /p > </p>
+            <p>Já os atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação).</p>
+            <p>exemplo:</p>
+            <p>< input type="text" ou "number" /></p>
+            <p>Nesse caso a Tag input abriria um campo texto no HTML. Com o atributo type você consegue escolher por exemplo se no campo texto você só colocaria texto ou números</p> 
+            </ol>
+            <h2 id="listas">Listas ordenadas e não ordenadas</h2> <small><sup><a href="#inicio">(voltar ao inicio)</sup></a></small>
+            <p>A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.</p>
+            <p>O uso de números induz o leitor a esperar uma seqüência coerentemente ordenada de itens. O uso de marcadores induz o leitor a esperar uma coleção de itens (que não precisa ter necessariamente uma ordem).</p>
+            <p>Exemplo Lista ordenada:</p>
+            <p>< ol ></p>                                    
+            <p>< li >item 1< /li></p>
+            <p>< li >item 2< /li></p>
+            <p>< li >item 3< /li></p>
+            <p>< /ol ></p>
+            <p> Resultado</p>
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+            <p>Uma lista ordenada é delimitada pelas etiquetas < OL> e < /OL>  Cada item da lista é delimitado pelas etiquetas < LI> e < /LI></p>
+            <p>exemplo Lista não ordenada:</p>
+            <p>< ul><p>
+            <p>< li>item 1< /li><p>
+            <p>< li>item 2< /li><p>
+            <p>< li>item 3< /li><p>
+            <p>< /ul><p>
+            <p>Resultado:</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            <p>A estrutura da lista não-ordenada é semelhante a da lista ordenada - porém, ao invés de ser construída com o elemento OL, é construída com o elemento UL</p>
+            <h2 id="links">Links</h2> <small><sup><a href="#inicio">(voltar ao inicio)</sup></a></small>
+            <p>O elemento < a> em <strong>HTML</strong> (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL. O conteúdo dentro de cada < a> precisará indicar o destino do link.</p>
+            <h2 id="referencias">Referências</h2> <small><sup><a href="#inicio">(voltar ao inicio)</sup></a></small>
+            <p><a href="https://dio.me" target="blank">DIO.ME</a></p>
+            <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="blank">developer.mozilla</a></p>
+            <p><a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="blank">Lista de Tags</a></p>
+    </body>
+
+</html>
